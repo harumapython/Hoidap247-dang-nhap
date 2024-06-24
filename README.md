@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hỏi đáp 247 - Trang đăng nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Font Awesome CDN -->
+    <link rel="favicon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin: 20px 0;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+        .container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .user-password {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px ;
+        }
+
+        .user-password input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px 0;
+        }
+
+        .submit {
+            padding: 14px 156px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(228, 84, 84);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .submit:hover {
+            background-color: rgb(85, 11, 11);
+        }
+        .submit a{
+            text-decoration: none;
+            color: white
+        }
+
+        .register a {
+            color: rgb(127, 197, 23);
+            font-size: 18px;
+
+        }
+        .forgot-password a {
+            color: black;
+            font-size: 17px;
+            margin-right: -280px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://hoidap247.com/static/img/logo_hoidap2.png" alt="Hoidap247 Logo">
+</header>
+<div class="container">
+    <div class="user-password">
+        <input type="text" placeholder="Tên đăng nhập">
+        <input type="password" placeholder="Mật khẩu">
+    </div>
+    <div class="forgot-password">
+        <a href="#">Quên mật khẩu?</a>
+    </div>
+    <div class="submit">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button">Đăng nhập</a>
+    </div>
+    <div class="register">Nếu chưa có tài khoản.
+        <a href="#">Tạo tài khoản tại đây</a>
+    </div>
+</div>
+</body>
+</html>
