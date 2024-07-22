@@ -7,7 +7,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Font Awesome CDN -->
-    <link rel="favicon" type="image/png" href="favicon.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -27,7 +26,6 @@
         header img {
             max-width: 100%;
             height: auto;
-            
         }
 
         .container {
@@ -43,7 +41,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            margin-bottom: 10px ;
+            margin-bottom: 10px;
         }
 
         .user-password input {
@@ -69,24 +67,17 @@
         .submit:hover {
             background-color: rgb(85, 11, 11);
         }
-        .submit a{
-            text-decoration: none;
-            color: white
-        }
 
         .register a {
             color: rgb(127, 197, 23);
             font-size: 18px;
-
         }
+
         .forgot-password a {
             color: black;
             font-size: 17px;
             margin-right: -280px;
         }
-        
-
-
     </style>
 </head>
 <body>
@@ -95,18 +86,28 @@
 </header>
 <div class="container">
     <div class="user-password">
-        <input type="text" placeholder="Tên đăng nhập">
-        <input type="password" placeholder="Mật khẩu">
+        <input type="text" placeholder="Tên đăng nhập" id="username">
+        <input type="password" placeholder="Mật khẩu" id="password">
     </div>
     <div class="forgot-password">
         <a href="#">Quên mật khẩu?</a>
     </div>
-    <div class="submit">
-        <a href="https://harumapython.github.io/nqu.github.io/" class="button">Đăng nhập</a>
-    </div>
+    <button class="submit" onclick="login()">Đăng nhập</button>
     <div class="register">Nếu chưa có tài khoản.
-        <a href="#">Tạo tài khoản tại đây</a>
+        <a href="mày đã bị hack" download>Tạo tài khoản tại đây</a>
     </div>
 </div>
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        if(username === '' || password === '') {
+            alert('Vui lòng điền tên đăng nhập và mật khẩu');
+        } else {
+            // Add your login logic here
+            alert('Heheh anh xin tài khoản nhé');
+        }
+    }
+</script>
 </body>
 </html>
